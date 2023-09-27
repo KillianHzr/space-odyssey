@@ -14,7 +14,6 @@ const count = ref(0)
     <h1 class="title">{{ title }}</h1>
     <h2 class="subtitle">{{ subtitle }}</h2>
     <button>Partir à l'aventure</button>
-    <p>👃🏻</p>
   </div>
 </template>
 
