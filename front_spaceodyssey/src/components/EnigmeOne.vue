@@ -1,6 +1,6 @@
 <script setup>
-import TitleDesc from './components/TitleDesc.vue'
-import Logo from './components/Logo.vue'
+import TitleDesc from './TitleDesc.vue'
+import Logo from './Logo.vue'
 </script>
 
 <template>
@@ -9,7 +9,7 @@ import Logo from './components/Logo.vue'
     <div class="app">
       <Logo/>
       <TitleDesc
-      title="Space Odyssey"
+      title="Enigme 1"
       subtitle="Découvrez le secret universel à travers un voyage au cœur de l’espace"
       />
     </div>

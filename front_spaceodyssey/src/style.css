@@ -3,7 +3,11 @@
 @font-face {
   font-family: "Termina";
   src: local("Termina"),
-   url(./fonts/TerminaTest-Regular.otf) format("truetype");
+   url(./fonts/TerminaTest-Medium.otf) format("truetype");
+}
+
+*{
+  box-sizing: border-box;
 }
 
 body {
@@ -23,21 +27,11 @@ body {
   margin: 0;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  text-decoration: none;
+  color: #fff;
 }
 
+a:hover{color: #fff;}
+a:active{color: #99ffec;}

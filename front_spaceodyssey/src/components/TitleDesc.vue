@@ -1,24 +1,23 @@
 <script setup>
-import { ref } from 'vue'
 
 defineProps({
   title: String,
   subtitle: String,
+  buttontext: String,
+  href: String,
 })
 
-const count = ref(0)
 </script>
 
 <template>
     <div class="home">
       <h1 class="title">{{ title }}</h1>
       <h2 class="subtitle">{{ subtitle }}</h2>
-      <button>Partir à l'aventure</button>
+      <a :href="href"><span>{{ buttontext }}</span></a>
     </div>
 </template>
 
 <style scoped>
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -38,37 +37,22 @@ h1 {
   font-size: 1.3em;
   line-height: 1.1;
   font-weight: 200;
+  margin-bottom: 5em;
 }
 
-button {
+a {
+  text-decoration: none;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #131313;
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
+a:hover {
   border-color: #99ffec;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 </style>
